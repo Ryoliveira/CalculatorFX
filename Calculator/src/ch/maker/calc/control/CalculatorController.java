@@ -10,31 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class CalculatorController {
-	
-    @FXML
-    private Button zero;
-	@FXML
-    private Button one;
-    @FXML
-    private Button two;
-    @FXML
-    private Button three;
-    @FXML
-    private Button four;
-    @FXML
-    private Button five;
-    @FXML
-    private Button six;
-    @FXML
-    private Button seven;
-    @FXML
-    private Button eight;
-    @FXML
-    private Button nine;
-    @FXML
-    private Button add;
-    @FXML
-    private Button subtract;
+
     @FXML
     private Button squareRoot;
     @FXML
@@ -45,12 +21,6 @@ public class CalculatorController {
     private Label displayBox;
     @FXML
     private Button equals;
-    @FXML
-    private Button divide;
-    @FXML
-    private Button multiply;
-    @FXML
-    private Button decimal;
     @FXML
     private Button deleteLast;
     
