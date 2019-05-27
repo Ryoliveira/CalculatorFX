@@ -57,55 +57,8 @@ public class CalculatorController {
     @FXML 
     void putSymbol(ActionEvent event){
     	Button btn = (Button) event.getSource();
-    	String id = btn.getId();
-    	char symbol = ' ';
-    	switch(id) {
-    		case "zero":
-    			symbol = '0';
-    			break;
-    		case "one":
-    			symbol = '1';
-    			break;
-    		case "two":
-    			symbol = '2';
-    			break;
-    		case "three":
-    			symbol = '3';
-    			break;
-    		case "four":
-    			symbol = '4';
-    			break;
-    		case "five":
-    			symbol = '5';
-    			break;
-    		case "six":
-    			symbol = '6';
-    			break;
-    		case "seven":
-    			symbol = '7';
-    			break;
-    		case "eight":
-    			symbol = '8';
-    			break;
-    		case "nine":
-    			symbol = '9';
-    			break;
-    		case "subtract":
-    			symbol = '-';
-    			break;
-    		case "add":
-    			symbol = '+';
-    			break;
-    		case "multiply":
-    			symbol = '*';
-    			break;
-    		case "divide":
-    			symbol = '/';
-    			break;
-    		case "decimal":
-    			symbol = '.';
-    			break;
-    	}
+    	String symbol = btn.getText();
+    	if(symbol.equals("x")) symbol = "*";
     	setDisplayBox(symbol);	
     }
 
@@ -156,7 +109,7 @@ public class CalculatorController {
     	displayBox.setText(text);
     }
     
-    void setDisplayBox(char c) {
+    void setDisplayBox(String c) {
     	String oldText = displayBox.getText();
     	displayBox.setText(oldText + c);
     }
